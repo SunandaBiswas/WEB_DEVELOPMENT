@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Inline & Block Styling</title>
+    <style>
+      li {
+        display: inline;
+      }
+
+      li a {
+        padding-right: 20px;
+      }
+
+      img {
+        display: block;
+        margin: auto;
+      }
+      .box {
+        display: inline-block;
+        width: 32.8%;
+        box-sizing: border-box;
+        background: #f4f4f4;
+        padding: 20px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Block level convert to inline -->
+    <ul>
+      <li><a href="#">Technology</a></li>
+      <li><a href="#">Business</a></li>
+      <li><a href="#">Fashion</a></li>
+    </ul>
+    <a href="#" style="background: red;">My link</a>
+    <a href="#">My link 2</a>
+
+    <p style="background: red;">shahriar</p>
+    <p>Saleque</p>
+
+    <br />
+    <br />
+
+    <!-- Inline element converted to block -->
+    <img src="./img/leaf.png" alt="leaf" />
+
+    <!-- inline-block -->
+    <div class="box">
+      <h3>Heading 1</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure
+        in fugiat laudantium officia aliquam ex? Sint sit quibusdam quas!
+      </p>
+    </div>
+    <div class="box">
+      <h3>Heading 2</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure
+        in fugiat laudantium officia aliquam ex? Sint sit quibusdam quas!
+      </p>
+    </div>
+    <div class="box">
+      <h3>Heading 3</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur iure
+        in fugiat laudantium officia aliquam ex? Sint sit quibusdam quas!
+      </p>
+    </div>
+  </body>
+</html>

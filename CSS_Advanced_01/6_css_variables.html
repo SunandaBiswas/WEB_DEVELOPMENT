@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS variables</title>
+    <style>
+      /* CSS variables */
+
+      /* Global scope */
+      :root {
+        --container-max: 960px;
+        /* --box-bg-color: steelblue;
+        --box-txt-color: #fff; */
+        --box-1-width: 1;
+        --box-2-width: 3;
+        --header-bg-color: #333;
+        --header-txt-color: #fff;
+        --header-txt-align: center;
+      }
+
+      header {
+        background-color: var(--header-bg-color);
+        color: var(--box-bg-color);
+        text-align: var(--header-txt-align);
+      }
+
+      .box {
+        --box-bg-color: steelblue;
+        --box-txt-color: #fff;
+        --box-1-width: 1;
+        --box-2-width: 3;
+        --box-shadow-h-offset: 10px;
+        --box-shadow-v-offset: 5px;
+        --box-shadow-blur: 5px;
+        --box-shadow-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <header><h1>CSS Variables</h1></header>
+
+    <div class="container">
+      <div class="box box-1">
+        <h1>Hello World</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod
+          ullam necessitatibus itaque quisquam incidunt obcaecati temporibus
+          sint nulla exercitationem.
+        </p>
+      </div>
+      <div class="box box-2">
+        <h1>Hello World</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor quod
+          ullam necessitatibus itaque quisquam incidunt obcaecati temporibus
+          sint nulla exercitationem.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

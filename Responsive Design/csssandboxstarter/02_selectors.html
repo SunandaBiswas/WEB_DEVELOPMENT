@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Selectors</title>
+    <style>
+      /* Class selector */
+      .primary-heading {
+        color: blue;
+      }
+      /* ID selector */
+      #welcome {
+        background-color: #f4f4f4;
+      }
+      /* Multiple selector */
+      #welcome,
+      #about {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 5px;
+      }
+      /* Nested Selectors */
+      #welcome p,
+      #about {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <h2 class="primary-heading">Welcome</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi,
+        placeat.
+      </p>
+    </div>
+    <div id="about">
+      <h2 class="primary-heading">About</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, nemo.
+      </p>
+    </div>
+  </body>
+</html>

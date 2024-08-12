@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeyFrames</title>
+    <style>
+      body {
+        background: #333;
+      }
+      .box {
+        background: white;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        animation-name: animate2;
+        animation-duration: 5s;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
+        /* animation-delay: 2s; */
+        /* we also have alternate-reverse which will cause the animation to happen in reverse */
+        /* animation-direction: alternate;
+        animation-timing-function: ease-in-out; */
+        /* animate = animation-name | animation-duration | animation-iteration-count | animation-timing-function */
+        /* animation: animate1 5s forwards 1s ease-in-out; */
+      }
+
+      @keyframes animate1 {
+        from {
+          top: 0;
+        }
+
+        to {
+          top: 200px;
+          background-color: red;
+          width: 600px;
+        }
+      }
+
+      @keyframes animate2 {
+        0% {
+          left: 0px;
+          top: 0px;
+          background-color: white;
+        }
+        25% {
+          left: 300px;
+          top: 0px;
+          background-color: red;
+        }
+        50% {
+          left: 300px;
+          top: 300px;
+          background-color: green;
+        }
+        75% {
+          left: 0px;
+          top: 300px;
+          background-color: blue;
+        }
+        100% {
+          left: 0px;
+          top: 0px;
+          background-color: white;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
